@@ -20,8 +20,8 @@
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build",
-    "eslint": "eslint .",
-    "fix": "eslint . --fix"
+    "eslint": "eslint --ext .jsx --ext .js .",
+    "fix": "eslint --ext .jsx --ext .js . --fix"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
@@ -61,6 +61,7 @@
   ],
   "dependencies": {
     "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-jsx-a11y": "^6.1.1"
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "react-event-listener": "^0.6.3"
   }
 }

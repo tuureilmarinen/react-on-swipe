@@ -23,5 +23,7 @@
     "comma-dangle": ["error", "always-multiline"],
     "object-curly-newline": ["error", { "multiline": true }],
     "no-multiple-empty-lines": "error",
+    "react/jsx-filename-extension": "off",
+    "react/destructuring-assignment": "off"
   }
 }
